@@ -2,7 +2,6 @@ import "./App.css";
 import "./normal.css";
 // import setState
 import { useState } from "react";
-import e from "express";
 
 function App() {
 
@@ -59,7 +58,7 @@ setInput("");
         </div>
         <div className="chat-input-holder">
           <form onSubmit={handleSubmit}>
-          <input className="chat-input-textarea" rows="1" value={input} onChange = {(e) => setInput = (e.target.value)}></input>
+          <input className="chat-input-textarea" rows="1" value={input} onChange = {(e) => setInput(e.target.value)}></input>
           </form>
         </div>
       </section>
